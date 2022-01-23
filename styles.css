@@ -4,37 +4,43 @@
 
 h1 {
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 1.5em;
+    font-family: 'Merriweather', serif;
+    font-size: 1.3em;
+}
+.signup {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 p {
     text-align: center;
     font-size: 1.1em;
-    color: rgb(161, 160, 160);
+    color: rgb(87, 82, 82);
     margin-bottom: 35px;
+    margin-top: 0;
 }
 
 header h1 {
     color: white;
-    background: rgb(54, 64, 85);
+    background: rgb(45, 58, 85);
     padding: 20px;
     margin: 0;
     font-size: 1.3em;
 }
 
 hr {
-    border-top: 10px double #8c8b8b;
+    border-top: 10px double #000000;
     margin: 10px 10px 20px 10px;
 }
 
 body {
     margin: 0;
+    background-color: rgb(189, 217, 230);
 }
 
 legend {
-    font-size: 1.3em;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
     padding: 0;
 }
@@ -45,6 +51,7 @@ legend {
     margin: 15px 5px;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -54,16 +61,20 @@ select {
   border: none;
   font-size: 16px;
   height: auto;
-  margin: 10px 0;
+  margin: 15px 0;
   outline: 0;
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
   color: #9a9fa3;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   border-radius: 5px;
 }
-
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color: rgb(231, 218, 218);
+}
 
 select {
     padding: 15px;
@@ -73,14 +84,13 @@ select {
     border-top: 3px solid black;
 }
 
-
 button {
     padding: 15px;
     color: #FFF;
-    background-color: #2f944d;
+    background-color: #3ac5b3;
     font-size: 1.3em;
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Merriweather', serif;
     width: 90%;
     border-radius: 5px;
     border: none;
@@ -91,16 +101,16 @@ button {
 fieldset {
     border: none;
 }
-
 label {
-    display: inline-block;
-    margin-top: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 0.9em;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 0 4px 15px 5px;
+  margin: 0 7px 15px 5px;
 }
+
 
 #zip {
     max-width: 50%;
@@ -109,7 +119,18 @@ input[type="checkbox"] {
 footer p {
     font-size: .9em;
     margin-bottom: 100px;
+    margin-top: 25px;
 }
+
+Input:focus,
+Textarea:focus {
+	Border: 2px solid #000000;
+}
+
+.contact-title {
+    margin-bottom: 10px;
+}
+
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -120,26 +141,45 @@ footer p {
         max-width: 480px;
         margin: 30px auto;
     }
-
     form {
       max-width: 480px;
       margin: 0 auto;
-   
-    }
-    fieldset {
-        padding: 0;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
-        max-width: 60%;
-        margin: 20px;
-        float: right;
+      
     }
     label {
-        margin: 20px 0;
-        float: left;
+        display: inline-block;
     }
-  
+    .col-1 {
+        float: left;
+        width: 30%;
+        margin-top: 25px;
+    }
+    .col-2 {
+        float: left;
+        width: 70%;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    fieldset {
+        margin: 0;
+        padding: 0;
+        margin-right: 5px;
+    }
+    .contact-title {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+    button {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+
   }
   
