@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        input::placeholder {
-            font-style: italic;
-            float: right;
-            color: rgb(194, 187, 187);
-        }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -33,51 +26,28 @@
      <fieldset class="form1">
      <legend class="contact-title">Contact Information</legend>
          <div class="row">
-            <div class="col-1">
                 <label for="name">Full Name</label>
-            </div>
-            <div class="col-2">
                 <input type="text" id="name" name="user_name"  placeholder="Required" required>
-            </div>
         </div>
         <div class="row">
-            <div class="col-1">
                 <label for="mail">Email Address</label>
-            </div>
-            <div class="col-2">
                 <input type="email" id="mail" name="user_email" placeholder="Required" required>
-            </div>
         </div>
         <div class="row">
-            <div class="col-1">
-                <label for="phone">Phone Number</label>
-            </div>
-            <div class="col-2">
-                <input type="tel" id="phone" name="user-phone" placeholder="e.g. 123-456-7890">
-            </div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user-phone" placeholder="e.g. 123-456-7890">
         </div>
         <div class="row">
-            <div class="col-1">
                 <label for="address">Street Address</label>
-            </div>
-            <div class="col-2">
                 <input type="text" id="address" name="user-address1" placeholder="Enter your address here">
-            </div>
         </div>
         <div class="row">
-            <div class="col-1">
-                <label for="city">City</label>
-            </div>
-            <div class="col-2">
-                <input type="text" id="city" name="user-address2" placeholder="Enter your city here">
-            </div>
+             <label for="city">City</label>
+             <input type="text" id="city" name="user-address2" placeholder="Enter your city here">
         </div>
         <div class="row">
-            <div class="col-1">
-                <label for="state">State</label>
-            </div>
-            <div class="col-2">
-                <select id="state" name="user_state" >
+             <label for="state">State</label>
+             <select id="state" name="user_state" >
                     <option>Choose State</option>
                     <option>Alabama</option>
                     <option>Arizona</option>
@@ -89,16 +59,11 @@
                     <option>Delaware</option>
                     <option>Florida</option>
                     <option>Georgia</option>
-                </select>
-            </div>
+            </select>
         </div>
         <div class="row">
-            <div class="col-1">
-                <label for="zip">Zip Code</label><br>
-            </div>
-            <div class="col-2">
-                <input type="text" id="zip" name="user_zip" placeholder="e.g. 12345">
-            </div>
+             <label for="zip">Zip Code</label><br>
+             <input type="text" id="zip" name="user_zip" placeholder="e.g. 12345">
         </div>
     </fieldset>
 
