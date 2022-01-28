@@ -96,7 +96,7 @@ button {
     border: none;
     margin-left: 15px;
     font-weight: bold;
-  }
+}
 
 fieldset {
     border: none;
@@ -125,8 +125,16 @@ footer p {
 Input:focus,
 Textarea:focus {
 	Border: 2px solid #000000;
+    transform: scale(1.05);
+    transition: all 2s;
 }
-
+Input:hover,
+Textarea:hover {
+	Border: 2px solid #000000;
+}
+button:hover {
+    Border: 2px solid #000000;
+}
 .contact-title {
     margin-bottom: 10px;
 }
@@ -137,7 +145,10 @@ textarea::placeholder {
     float: right;
     color: rgb(194, 187, 187);
 }
-
+.row {
+    display: flex;
+    flex-direction: column;
+  }
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -151,30 +162,27 @@ textarea::placeholder {
     form {
       max-width: 500px;
       margin: 0 auto;
-      
+    }
+    .signup {
+        margin-top: 50px;
     }
     .row {
         display: flex;
         flex-direction: row;
         padding-bottom: 15px;
-      }
-    /* label {
-        display: inline-block;
+        Justify-content: space-between;
     }
-    .col-1 {
-        float: left;
-        width: 30%;
-        margin-top: 25px;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        max-width: 70%;
+        margin: 5px 0;
     }
-    .col-2 {
-        float: left;
-        width: 70%;
+    label {
+        
+        margin-top: 20px;
     }
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    } */
     fieldset {
         margin: 0;
         padding: 0;
@@ -183,7 +191,6 @@ textarea::placeholder {
     .contact-title {
         margin-bottom: 10px;
     }
-
     footer {
         margin-top: 30px;
     }
@@ -194,7 +201,7 @@ textarea::placeholder {
     }
     #zip {
         max-width: 25%;
+        margin-right: 222px;
     }
-
   }
   
